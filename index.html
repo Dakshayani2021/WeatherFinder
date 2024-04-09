@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <div class="hero">
+    <nav >
+      <ul class="flex">
+      <li class="mx-3 font-semibold font-size: larger text-white"><h1>Weather Finder</h1></li>
+      <!--<form action="">
+        <input id="city" type="search" placeholder="Search your City Weather...">
+        <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+      </form>
+      </ul>-->
+      <div class="pal">
+        <form action="" class="search-bar">
+          <input  id="city"  type="text" placeholder="Search any Place's Weather" name="q">
+          <button type="submit" id="submit"><img src="search.gif"></button>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="star">
+      <img src="star.png">
+      <img src="star.png">
+      <img src="star.png">
+      <img src="star.png">
+      <img src="star.png">
+      <img src="star.png">
+      <img src="star.png">
+    </div>
+    <h1 id="text"></h1>
+  <div class="container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="front">
+        <h2><span id="cityName"></span></h2>
+        
+        <button>Hover me</button>
+      </div>
+      <div class="back">
+          <img src="cloud.png">
+          <h1><span id="cityName"></span></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Cloud PCT:<span id="cloud_pct"></span></li>
+            <li>Temperature:<span id="temp"></span></li>
+            <li>Feels like:<span id="feels_like"></span></li>
+            <li>Humidity:<span id="humidity"></span></li>
+            <li>Wind Degree:<span id="wind_degrees"></span></li>
+            <li>Wind Speed:<span id="wind_speed"></span></li>
+            <li>Minimum Temperature:<span id="min_temp"></span></li>
+            <li>Maximum Temperature:<span id="max_temp"></span></li>
+            <li>Sunrise:<span id="sunrise"></span></li>
+            <li>Sunset:<span id="sunset"></span></li>
+            
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
